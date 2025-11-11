@@ -120,6 +120,22 @@ If the API calls fail:
 4. **No Browser Extensions** - No need for VPNs or proxy extensions
 5. **Offline Capable** - Interface works offline (API calls still need internet)
 
+## Deploying to Vercel
+
+This app can be deployed to Vercel for cloud hosting. See [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md) for detailed instructions.
+
+### Quick Vercel Deployment Steps:
+
+1. **Push your code to GitHub/GitLab/Bitbucket**
+2. **Import project to Vercel** from your Git repository
+3. **Add Environment Variable** in Vercel:
+   - Go to Settings → Environment Variables
+   - Add `GEMINI_API_KEY` with your API key value
+   - Select all environments (Production, Preview, Development)
+4. **Deploy** - Vercel will automatically build and deploy
+
+**Important:** Make sure to add `GEMINI_API_KEY` in Vercel's environment variables, otherwise you'll get an error about the API key not being configured.
+
 ## Alternative API Options
 
 While this project uses Gemini API, you can easily modify it to use:
