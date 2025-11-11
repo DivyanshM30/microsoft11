@@ -50,7 +50,7 @@ if GEMINI_API_KEY:
         # You can change to 'gemini-1.5-pro' for better quality
         # Note: gemini-2.5-flash might not exist, using gemini-1.5-flash as fallback
         try:
-            model = genai.GenerativeModel('gemini-1.5-flash')
+            model = genai.GenerativeModel('gemini-2.5-flash')
         except:
             try:
                 model = genai.GenerativeModel('gemini-pro')
